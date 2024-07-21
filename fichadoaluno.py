@@ -6,7 +6,7 @@ import io
 from docxtpl import DocxTemplate
 from pathlib import Path
 from datetime import datetime
-import locale
+#import locale
 #TESTAR SE JA SELECIONARAM O ALUNO
 if "sheet" not in st.session_state:
     switch_page("Lista Piloto")
@@ -38,7 +38,7 @@ try:
 
 
     # Configurar o idioma local para português do Brasil
-    locale.setlocale(locale.LC_TIME, 'pt_BR.UTF-8')
+    #locale.setlocale(locale.LC_TIME, 'pt_BR.UTF-8')
     nascimento = infoAluno["Data de Nasc."].strftime('%d/%m/%Y')
     # Obter a data de hoje
     data_atual = datetime.today()
