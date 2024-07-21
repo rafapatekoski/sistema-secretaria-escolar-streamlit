@@ -80,14 +80,14 @@ try:
         st.download_button(
                 label="Declaração de transferencia",
                 data=bio.getvalue(),
-                file_name=(f"{context["nome"]}_saida.docx"),
+                file_name=(f"{context['nome']}_saida.docx"),
                 mime="docx"
             )
     if doc_downloadfrequencia:
         st.download_button(
                 label="Declaração de frequencia",
                 data=bio2.getvalue(),
-                file_name=(f"{context["nome"]}_frequencia.docx"),
+                file_name=(f"{context['nome']}_frequencia.docx"),
                 mime="docx"
             )
     st.write(infoAluno["Nome do Aluno"])
